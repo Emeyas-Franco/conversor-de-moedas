@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/mediascreen.css">
+  <title>Conversor de moedas</title>
+</head>
+
+<body>
+  <h1>Conversor de Moedas</h1>
+  <img id="logo" src="./assets/img/logo.png" alt="logo Emeyas">
+  <main>
+      <label for="convertFrom">
+        Converter <b>de</b>
+        <select id="convertFrom">
+          <option value="real">R$ Real Brasileiro</option>
+          <option value="dollar">US$ Dólar Americano</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ Libra Esterlina</option>
+          <option value="bitcoin">₿ Bitcoin</option>
+        </select>
+      </label>
+      <label for="convertTo">
+        Converter <b>para</b>
+        <select id="convertTo" value="dollar">
+          <option value="dollar">US$ Dólar Americano</option>
+          <option value="euro">€ Euro</option>
+          <option value="libra">£ Libra Esterlina</option>
+          <option value="bitcoin">₿ Bitcoin</option>
+          <option value="real">R$ Real Brasileiro</option>
+        </select>
+      </label>
+      <label for="value">Valor</label>
+      <input type="text" name="value" id="value">
+      <button class="convert">Converter</button>
+    <div class="content">
+      <img id="imgFrom" src="./assets/img/brasil.png" alt="Bandeira Brasil">
+      <p id="coinFrom">
+        Real
+      </p>
+      <p>
+        <span id="valueFrom">R$ 0,00</span>
+      </p>
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="50" viewBox="0 0 35 50" fill="none">
+        <path d="M17.5 49.9386L0 28.0905H10V0H25V28.0905H35L17.5 49.9386Z" fill="#306697" />
+      </svg><br>
+      <img id="imgTo" src="./assets/img/estados-unidos.png" alt="Bandeira Estados Unidos">
+      <p id="coinTo">
+        Dólar Americano
+      </p>
+      <p id="valueTo">
+        $ 0,00
+      </p>
+    </div>
+
+  </main>
+</body>
+<script src="./assets/scripts/script.js"></script>
+
+</html>
